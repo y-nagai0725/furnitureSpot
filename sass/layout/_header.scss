@@ -1,0 +1,32 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+    &__link {
+        display: block;
+        padding: 10px;
+        color: $text-color;
+        font-family: $roboto;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-decoration: none;
+        transition: 0.2s ease-out;
+
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+//各ファイルは必ず登録済みの変数を最初に読み込みます
+//as *で読み込みファイル名を省略することができます
+@use "../global" as *;
+
+.footer {
+  position: relative;
+  padding: 80px 0;
+  background: $main-color;
+
+  &__ttl {
+    margin-bottom: 72px;
+    text-align: center;
+    color: #fff;
+    font-family: $roboto;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+
+  &__copy {
+    text-align: center;
+  }
+
+  &__small {
+    color: #fff;
+    font-family: $roboto;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+  }
+}
